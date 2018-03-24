@@ -1,0 +1,80 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 2, ../sass/_grid.scss */
+html * {
+  box-sizing: border-box;
+}
+/* line 5, ../sass/_grid.scss */
+html body {
+  font-size: 16px;
+  line-height: 1.15;
+  margin: 0;
+}
+/* line 9, ../sass/_grid.scss */
+html body .container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 1, ../sass/_box.scss */
+html body .container .box {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+/* line 5, ../sass/_box.scss */
+html body .container .box .hbox,
+html body .container .box .vbox {
+  width: 100%;
+  overflow: hidden;
+  float: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 12, ../sass/_box.scss */
+  html body .container .box .hbox {
+    float: left;
+  }
+  /* line 14, ../sass/_box.scss */
+  html body .container .box .hbox.full {
+    width: 100%;
+  }
+  /* line 17, ../sass/_box.scss */
+  html body .container .box .hbox.half {
+    width: 50%;
+  }
+  /* line 20, ../sass/_box.scss */
+  html body .container .box .hbox.one-fourth {
+    width: 25%;
+  }
+  /* line 23, ../sass/_box.scss */
+  html body .container .box .hbox.three-fourth {
+    width: 75%;
+  }
+}
+
+/* line 1, ../sass/_custom.scss */
+.box {
+  text-align: center;
+}
+/* line 3, ../sass/_custom.scss */
+.box .one {
+  background-color: lavenderblush;
+  padding: 50px;
+}
+/* line 7, ../sass/_custom.scss */
+.box .two {
+  padding: 50px;
+  background-color: lavender;
+}
+/* line 11, ../sass/_custom.scss */
+.box .three {
+  padding: 250px 50px;
+  background-color: #fff5ba;
+}
+/* line 15, ../sass/_custom.scss */
+.box .four {
+  padding: 250px 50px;
+  background-color: #aff8d8;
+}

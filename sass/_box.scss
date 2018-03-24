@@ -1,0 +1,28 @@
+.box {
+	width: 100%;
+	overflow: hidden;
+	clear: both;	
+	.hbox,
+	.vbox {
+		width: 100%;
+    overflow: hidden;
+		float: none;
+	}
+	@media screen and (min-width: 768px) {
+		.hbox {
+    	float: left;
+    	&.full {
+    		width: 100%;
+    	}
+    	&.half {
+    		@include layout-calc(6);
+    	}
+    	&.one-fourth {
+    		@include layout-calc(3);
+    	}
+    	&.three-fourth {
+    		@include layout-calc(9);
+    	}
+		}
+  }	
+}

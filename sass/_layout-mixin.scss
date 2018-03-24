@@ -1,0 +1,3 @@
+@mixin layout-calc($width: 100%) {
+	width: ($width/12)*100%;
+}
